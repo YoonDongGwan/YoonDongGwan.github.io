@@ -1,0 +1,10 @@
+---
+layout: post
+title: asdsa
+date: 2022-03-11 090000 +0900
+---
+
+# 깃 명령어 
+* git add
+* git commit
+* git push
