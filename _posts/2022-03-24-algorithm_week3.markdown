@@ -4,6 +4,7 @@ title: 2022-03-18 컴퓨터 알고리즘 3주차 - 분할 정복 알고리즘
 date: 2022-03-24 090000 +0900
 layout: post
 ---
+
 분할 정복 알고리즘(Divide-and-Conquer)
 ===
 ```
@@ -124,3 +125,23 @@ if(left < right){
 최근접 점의 쌍 찾기
 ===
 최근점 점의 쌍을 찾는 문제에서도 분할 정복 알고리즘이 사용된다.
+
+<img src="https://github.com/YoonDongGwan/YoonDongGwan.github.io/blob/main/img/img3.png?raw=true" width="800" height="450"/>
+
+```
+위와 같은 점들이 있을 때, 무작정 모든 점의 거리를 계산하는 것이 아닌 2개로 분할하여 문제를 해결하는 방식이 더 효율적이다.
+```
+
+<img src="https://github.com/YoonDongGwan/YoonDongGwan.github.io/blob/main/img/img4.png?raw=true" width="800" height="450"/>
+
+```
+이 때, 왼쪽 부분집합의 점들간 최단 거리는 10, 오른쪽 부분집합의 점들간 최단 거리가 15가 나와서 최단거리가 10이라고 판단하기엔 이르다.  
+가운데 최단 거리 7인 점들이 서로 다른 집합으로 나뉘면서 갈라졌기 때문이다. 때문에 문제를 해결할 때, 이 경우를 반드시 고려해야한다.
+```
+
+<img src="https://github.com/YoonDongGwan/YoonDongGwan.github.io/blob/main/img/img5.png?raw=true" width="800" height="450"/>
+
+```
+중간 영역에서도 발견한 최단 거리 10 영역내에 최근접 점의 쌍이 있는지도 확인해보아야한다. 위 그림의 경우 중간 영역에 최단 거리가 7인 점들을 발견할 수 있었다.
+```
+
